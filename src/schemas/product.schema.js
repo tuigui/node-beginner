@@ -25,7 +25,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
       enum: Object.values(PRODUCT_STATUS),
-      default: PRODUCT_STATUS.FOR.SALE,
+      default: PRODUCT_STATUS.FOR_SALE,
     },
   },
   { timestamps: true, toJSON: { virtuals: true } }
