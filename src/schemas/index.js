@@ -6,8 +6,8 @@ const connect = () => {
     .connect(MONGODB_URL, {
       dbName: MONGODB_NAME,
     })
-    .then(() => console.log("MongoDB 연결에 성공하였습니다."))
-    .catch((err) => console.log(`MongoDB 연결에 실패하였습니다. ${err}`));
+    .then(() => console.log("MongoDB 연결에 성공했습니다."))
+    .catch((err) => console.log(`MongoDB 연결에 실패했습니다. ${err}`));
 };
 
 mongoose.connection.on("error", (err) => {
